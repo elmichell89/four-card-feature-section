@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.head-text{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+    padding-top: 5%;
+    color: hsl(234, 12%, 34%);
+}
+
+.text-1{
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.text-2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.text-3{
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 5%;
+}
+
+.main-container{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 3;
+    gap: 20px;
+    place-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.supervisor{
+    grid-column: 1;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px -15px;
+    border-top: 5px solid;
+    border-color: hsl(180, 62%, 55%);
+    padding: 5%;
+}
+
+.subgrid{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 2;
+    gap: 20px;
+}
+
+.team-builder{
+    grid-row: 1;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px -15px;
+    border-top: 5px solid;
+    border-color: hsl(0, 78%, 62%);
+    padding: 5%;
+}
+
+.karma{
+    grid-row: 2;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px -15px;
+    border-top: 5px solid;
+    border-color: hsl(34, 97%, 64%);
+    padding: 5%;
+}
+
+.calculator{
+    grid-column: 3;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px -15px;
+    border-top: 5px solid;
+    border-color: hsl(212, 86%, 64%);
+    padding: 5%;
+}
+
+.title{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.description{
+    font-weight: 400;
+    font-size: small;
+    color: hsl(212, 6%, 44%);
+}
+
+.logo{
+    display: flex;
+    justify-self: right;
+    padding-right: 20px;
+    padding-top: 20px
+}
+
+@media (max-width: 375px) {
+    .main-container{
+        display: block;
+        padding-bottom: 10%;
+    }
+    .subgrid{
+        display: block;
+        padding: 40px;
+    }
+    .head-text{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .team-builder{
+        margin-bottom: 40px;
+    }
+
+}
